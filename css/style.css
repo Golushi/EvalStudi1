@@ -5,12 +5,12 @@ h2, h3, h4 {
     text-align: center;
 }
 header {
-    background: url(/medias/foret_pins_aquitaine.jpg)no-repeat 50% 50%;
+    background: url(medias/foret_pins_aquitaine.jpg)no-repeat 50% 50%;
     background-size: cover;
     height: 100vh;
 }
 #logo {
-    background: url(/medias/Logo.jpg)no-repeat 50% 50%;
+    background: url(medias/Logo.jpg)no-repeat 50% 50%;
     background-size: cover;
     width: 200px;
     height: 200px;
