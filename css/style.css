@@ -1,3 +1,46 @@
+html {
+    scroll-behavior: smooth;
+}
+h2, h3, h4 {
+    text-align: center;
+}
+header {
+    background: url(/medias/foret_pins_aquitaine.jpg)no-repeat 50% 50%;
+    background-size: cover;
+    height: 100vh;
+}
+#logo {
+    background: url(/medias/Logo.jpg)no-repeat 50% 50%;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+}
 header h1 {
-    color: red;
+    padding-top: 250px;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    text-shadow: 2px 2px 2px #000000;
+    font-size: 2.5em;
+    font-weight: 900;
+    animation: titre ease 5s;
+}
+@keyframes titre {
+    0% {
+        opacity: 0;
+        transform: translateY(400px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+main {
+    height: 100vh;
+    background-color: gray;
+}
+#navbarSite, #logo {
+    transition: 1s;
+    z-index: 1000;
 }
