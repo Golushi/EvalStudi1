@@ -10,7 +10,7 @@ window.onscroll=function(){
         navbar.classList.add("bg-transparent","navbar-dark");
         navbar.classList.remove("bg-light","navbar-light");
     }
-    if(window.pageYOffset>20){
+    if(window.pageYOffset>50){
         document.getElementById("logo").style.height = "100px";
         document.getElementById("logo").style.width = "100px";
     }
