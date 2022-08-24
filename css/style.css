@@ -38,7 +38,7 @@ header h1 {
 }
 main {
     height: 100vh;
-    background-color: gray;
+    background-color: rgb(194, 194, 194);
 }
 #navbarSite, #logo {
     transition: 1s;
@@ -51,4 +51,9 @@ main {
     position: fixed;
     bottom: 100px;
     right: 30px;
+}
+footer .btn-social-share {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
 }
