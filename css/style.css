@@ -16,13 +16,12 @@ header {
 #logo {
     background: url(../medias/Logo.jpg)no-repeat 50% 50%;
     background-size: cover;
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
-
 }
 header h1 {
-    padding-top: 250px;
+    padding-top: 35vh;
     color: rgb(255, 255, 255);
     text-decoration: underline;
     text-shadow: 2px 2px 2px #000000;
@@ -33,11 +32,11 @@ header h1 {
 @keyframes titre {
     0% {
         opacity: 0;
-        transform: translateY(200px);
+        transform: translateY(60%);
     }
     100% {
         opacity: 1;
-        transform: translateY(0px);
+        transform: translateY(0%);
     }
 }
 main {
@@ -45,17 +44,20 @@ main {
     background-color: rgb(194, 194, 194);
 }
 #slogan {
-    top: 100px;
+    top: 10%;
 }
 .leaf {
     position: fixed;
-    bottom: 400px;
+    bottom: 40%;
     right: -20px;
     z-index: 1300;
 }
+.leaf .btn {
+    border: none;
+}
 #don {
     position: fixed;
-    bottom: 430px;
+    bottom: 18%;
     right: -400px;
     margin: 20px;
     transition: 1s;
@@ -65,7 +67,6 @@ main {
 .leaf {
     animation: shake 8s ease infinite;
 }
-
   @keyframes shake {
     0% { transform: translate(0px, 0px) rotate(0deg); }
     1% { transform: translate(-1px, -2px) rotate(-1deg); }
@@ -84,5 +85,5 @@ footer .btn-social-share {
     border-radius: 50%;
     width: 40px;
     height: 40px;
+    margin-top: 10px;
 }
-

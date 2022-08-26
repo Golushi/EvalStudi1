@@ -15,8 +15,8 @@ window.onscroll=function(){
         document.getElementById("logo").style.width = "100px";
     }
     else{
-        document.getElementById("logo").style.height = "200px";
-        document.getElementById("logo").style.width = "200px";
+        document.getElementById("logo").style.height = "180px";
+        document.getElementById("logo").style.width = "180px";
     }
 }
 
