@@ -15,11 +15,10 @@ window.onscroll=function(){
         document.getElementById("logo").style.width = "100px";
     }
     else{
-        document.getElementById("logo").style.height = "180px";
-        document.getElementById("logo").style.width = "180px";
+        document.getElementById("logo").style.height = "160px";
+        document.getElementById("logo").style.width = "160px";
     }
 }
-
 function showPanelCard() {
     let panel = document.getElementById("don");
     if(panel.style.right == "0px"){
