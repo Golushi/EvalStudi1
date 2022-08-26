@@ -47,10 +47,19 @@ main {
 #slogan {
     top: 100px;
 }
+.leaf {
+    position: fixed;
+    bottom: 400px;
+    right: -20px;
+    z-index: 1300;
+}
 #don {
     position: fixed;
-    bottom: 100px;
-    right: 30px;
+    bottom: 430px;
+    right: -400px;
+    margin: 25px;
+    transition: 1s;
+    z-index: 1200;
 }
 /* DEBUT FOOTER */
 footer .btn-social-share {
