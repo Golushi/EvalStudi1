@@ -68,11 +68,12 @@
           </div>
         </div>
         <!--END SLOGAN-->
-        <!--DON-->
+        <!--START DON-->
         <div>
           <div class="card text-center border-dark bg-light" 
               style="width: 18rem;"
-              id="don">
+              id="don" onclick="showPanelCard()">
+              <button id="x">X</button>
             <div class="card-body">
               <h5 class="card-title">Plus de 20 000 hectares à replanter!</h5>
               <h6 class="card-subtitle mb-2 text-muted">25% de l'objectif</h6>
@@ -87,7 +88,7 @@
                 </div>
               </div>
               <p class="card-text">Bravo! La forêt vous remercie.</p>
-              <a href="#" class="btn btn-danger">Plante un arbre</a>
+              <a href="#" class="btn btn-danger" id="formDon" onclick="openForm()">Plante un arbre</a>
             </div>
           </div>
           <div class="leaf d-flex flex-row-reverse">
@@ -97,6 +98,23 @@
           </div>
         </div>
         <!--END DON-->
+        <!--FORM-->
+        <div class="form-popup" id="myForm">
+          <form action="" class="form-container" method="GET">
+            <h2>Faire un don à Phoenix Land</h2>
+            <label for="name"><b>Nom</b></label><br />
+            <input name="name" type="text" placeholder="Entrez votre nom" required /> <br />
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+            <label for="euros"><b>Montant en €</b></label>
+            <input type="number" placeholder="€" name="euros" required min="1">
+            <button type="submit" class="btn bg-success">Faire le don</button>
+            <a href="https://www.paypal.com/" class="btn bg-primary" 
+              role="button" target="_blank">Don via PayPal</a>
+            <button type="button" class="btn cancel" onclick="closeForm()">Fermer</button>
+          </form>
+        </div>
+        <!--END FORM-->
     </header>
     <!--END HEADER-->
     <main>

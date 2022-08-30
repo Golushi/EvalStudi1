@@ -20,11 +20,22 @@ window.onscroll=function(){
     }
 }
 function showPanelCard() {
-    let panel = document.getElementById("don");
+    let panel = document.getElementById("don","x");
     if(panel.style.right == "0px"){
         panel.style.right = "-400px";
     }
     else {
         panel.style.right = "0px";
     }
+    
 }
+
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+    document.getElementById("don").style.display = "none";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+    document.getElementById("don").style.display = "block";
+  }

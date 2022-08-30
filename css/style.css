@@ -18,6 +18,7 @@ ul .nav-item {
     width: fit-content;
     border-radius: 10%;
     font-weight: bold;
+    margin: 2px;
 }
 #logo {
     background: url(../medias/Logo.jpg)no-repeat 50% 50%;
@@ -69,19 +70,68 @@ main {
     transition: 1s;
     z-index: 1200;
 }
+#x {
+    position: absolute;
+    background: red;
+    color: white;
+    top: -10px;
+    left: -10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.form-popup {
+    display: none;
+    position: fixed;
+    border: 3px solid #64646477;
+    bottom: 16%;
+    margin: 20px;
+    z-index: 1200;
+  }
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  .form-container input[type=text], .form-container input[type=number], .form-container input[type=name]  {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  .form-container input[type=text]:focus, .form-container input[type=number]:focus, .form-container input[type=name]:focus{
+    background-color: #ddd;
+    outline: none;
+  }
+  .form-container .btn {
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  .form-container .cancel {
+    background-color: red;
+  }
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
 /* SHAKE LEAF */
 .leaf {
-    animation: shake 8s ease infinite;
+    animation: shake 7s ease infinite;
 }
   @keyframes shake {
     0% { transform: translate(0px, 0px) rotate(0deg); }
     1% { transform: translate(-1px, -2px) rotate(-1deg); }
     2% { transform: translate(-2px, 0px) rotate(1deg); }
-    3% { transform: translate(2px, 2px) rotate(0deg); }
+    3% { transform: translate(3px, 2px) rotate(0deg); }
     4% { transform: translate(1px, -1px) rotate(1deg); }
-    5% { transform: translate(-1px, 2px) rotate(-1deg); }
+    5% { transform: translate(-1px, 3px) rotate(-2deg); }
     6% { transform: translate(-2px, 1px) rotate(0deg); }
-    7% { transform: translate(2px, 1px) rotate(-1deg); }
+    7% { transform: translate(3px, 1px) rotate(-2deg); }
     8% { transform: translate(-1px, -1px) rotate(1deg); }
     9% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(0px, 0px) rotate(0deg); }
