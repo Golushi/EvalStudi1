@@ -21,50 +21,85 @@
 <!--END HEAD-->
 <body>
     <!--START HEADER-->
-    <header>
-        <!--DON-->
-        <div>
-          <div class="card text-center border-dark bg-light" 
-              style="width: 18rem;"
-              id="don">
-            <div class="card-body">
-              <h5 class="card-title">Plus de 20 000 hectares à replanter!</h5>
-              <h6 class="card-subtitle mb-2 text-muted">25% de l'objectif</h6>
-              <div class="progress">
-                <div class="progress-bar bg-success progress-bar-animated progress-bar-striped" 
-                  role="progressbar" 
-                  aria-label="Success example" 
-                  style="width: 25%" 
-                  aria-valuenow="25" 
-                  aria-valuemin="0" 
-                  aria-valuemax="100">
-                </div>
+    <header id="headerEvenement">
+      <nav id="navbarSite" 
+         class="fixed-top navbar navbar-expand-sm navbar-dark bg-transparent">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" id="logo">
+          </a>
+        </div>
+      </nav>
+      <!--START SLOGAN-->
+      <h1>Evenements Phoenyx Land</h1>
+      <div class="card text-center border-dark mx-2 bg-light bg-opacity-75" 
+          id="slogan">
+        <div class="card-body">
+          <h5 class="card-title">Rejoignez-nous bénévolement!</h5>
+          <br class="card-text">L'équipe de Phoenyx Land participe activement à remettre en ordre 
+            les forêts de la Teste-de-Buch et de Landiras.<br /><br /> Plusieurs missions nécessite 
+            de l'aide exterieur.
+            Nous avons besoins d'aide dans notre petite pépinieres pour la plantation d'arbres qui 
+            seront ensuite plantés apres le début de la régéneration de la forêt. <br /><br />
+            Notre deuxième équipe se mobilise dans les forêts de Girondes pour identifier et résorber 
+            les causes des départs de feu, prévenir et sensibiliser le public, débroussailler 
+            certaines zones jugé à risque. <br /> <br />
+            Chaque samedi, vous avez la possibilité de venir nous aider. Il suffit juste de vous
+            enregistrer sur le formulaire qui suit. Toute l'équipe vous remercie pour vos dons et 
+            pour votre aide.
+          </p>
+          <a href="#about" class="btn btn-primary">Acceder au formulaire d'inscription</a>
+        </div>
+      </div>
+      <!--END SLOGAN-->
+      <!--START DON-->
+      <div>
+        <div class="card text-center border-dark bg-light" 
+            style="width: 18rem;"
+            id="don" onclick="showPanelCard()">
+            <button id="x">X</button>
+          <div class="card-body">
+            <h5 class="card-title">Plus de 20 000 hectares à replanter!</h5>
+            <h6 class="card-subtitle mb-2 text-muted">25% de l'objectif</h6>
+            <div class="progress">
+              <div class="progress-bar bg-success progress-bar-animated progress-bar-striped" 
+                role="progressbar" 
+                aria-label="Success example" 
+                style="width: 25%" 
+                aria-valuenow="25" 
+                aria-valuemin="0" 
+                aria-valuemax="100">
               </div>
-              <p class="card-text">Bravo! La forêt vous remercie.</p>
-              <a href="#" class="btn btn-danger">Plante un arbre</a>
             </div>
-          </div>
-          <div class="leaf d-flex flex-row-reverse">
-            <div class="btn" onclick="showPanelCard()">
-              <img src="medias/leaf_don.png" alt="leaf" height="130" width="130">
-            </div>
+            <p class="card-text">Bravo! La forêt vous remercie.</p>
+            <a href="#" class="btn btn-danger" id="formDon" onclick="openForm()">Plante un arbre</a>
           </div>
         </div>
-        <!--END DON-->
+        <div class="leaf d-flex flex-row-reverse">
+          <div class="btn" onclick="showPanelCard()">
+            <img src="medias/leaf_don.png" alt="leaf" height="130" width="130">
+          </div>
+        </div>
+      </div>
+      <!--END DON-->
+      <!--FORM-->
+      <div class="form-popup" id="myForm">
+        <form action="" class="form-container" method="GET">
+          <h2>Faire un don à Phoenix Land</h2>
+          <label for="name"><b>Nom</b></label><br />
+          <input name="name" type="text" placeholder="Entrez votre nom" required /> <br />
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+          <label for="euros"><b>Montant en €</b></label>
+          <input type="number" placeholder="€" name="euros" required min="1">
+          <button type="submit" class="btn bg-success">Faire le don</button>
+          <a href="https://www.paypal.com/" class="btn bg-primary" 
+            role="button" target="_blank">Don via PayPal</a>
+          <button type="button" class="btn cancel" onclick="closeForm()">Fermer</button>
+        </form>
+      </div>
+      <!--END FORM-->
     </header>
     <!--END HEADER-->
-    <main>
-        <section class="py-5" id="about">
-          <div class="container">
-            <div class="mb-5 align-items-center pt-5 pb-5">
-              <img class="img-fluid fire-land" src="medias/feu_gironde.jpg">
-              <h2 class="section-title">Notre mission</h2>
-              <p>
-              </p>
-            </div>
-          </div>
-        </section>
-    </main>
     <!--START FOOTER-->
     <footer class="text-center footer-page bg-light my-2">
       <div class="pb-2">

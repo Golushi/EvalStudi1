@@ -9,6 +9,9 @@ header {
     background-size: cover;
     height: 100vh;
 }
+#headerEvenement {
+    height: 125vh;
+}
 #navbarSite, #logo {
     transition: 1s;
     z-index: 1000;
@@ -28,12 +31,14 @@ ul .nav-item {
     border-radius: 50%;
 }
 header h1 {
-    padding-top: 35vh;
+    padding-top: 30vh;
     color: rgb(255, 255, 255);
     text-decoration: underline;
     text-shadow: 2px 2px 2px #000000;
     font-size: 3em;
     font-weight: 900;
+}
+#moveTitle {
     animation: titre ease 4s;
 }
 @keyframes titre {
