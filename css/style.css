@@ -1,7 +1,7 @@
 html {
     scroll-behavior: smooth;
 }
-h1, h2, h3, h4 {
+h1, h2, h3, h4, p {
     text-align: center;
 }
 header {
@@ -52,7 +52,7 @@ header h1 {
     }
 }
 main {
-    height: 100vh;
+    height: 90vh;
     background-color: rgb(194, 194, 194);
 }
 #slogan {
@@ -154,3 +154,55 @@ footer {
     height: 130px;
     bottom: 0;
 }
+/* END FOOTER */
+
+/* MEDIAS QUERIES */
+
+@media screen and (min-width:768px) {
+    main section .container div {
+        display:inline-block;
+        
+    }
+    main section .container img {
+        width: 516px;
+        height: 322px;
+    }
+    main section .container div .text {
+        width: 516px;
+        height: 342px; 
+    }
+    main section {
+        height: 110vh;
+    }
+}
+@media screen and (min-width:1200px) {
+    main section .container div {
+        display:inline-block;
+        
+    }
+    main section .container img {
+        width: 516px;
+        height: 322px;
+        float: left;
+    }
+    main section .container div .text {
+        width: 516px;
+        height: 342px;
+        float: right; 
+    }
+    main section {
+        height: 60vh;
+    }
+    main {
+        height: 60vh;
+    }
+}
+@media screen and (max-height:700px) {
+    main {
+        height: 100vh;
+    }
+    footer {
+        height: 100px;
+    }
+}
+
