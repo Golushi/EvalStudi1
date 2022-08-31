@@ -37,5 +37,12 @@ function openForm() {
   
   function closeForm() {
     document.getElementById("myForm").style.display = "none";
+    document.getElementById("inscriptionForm").style.display = "none";
     document.getElementById("don").style.display = "block";
   }
+
+  function openFormInscription() {
+    document.getElementById("inscriptionForm").style.display = "block";
+  }
+ 
+  

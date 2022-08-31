@@ -89,7 +89,7 @@ main {
     display: none;
     position: fixed;
     border: 3px solid #64646477;
-    bottom: 16%;
+    bottom: 2%;
     margin: 20px;
     z-index: 1200;
   }
@@ -98,14 +98,14 @@ main {
     padding: 10px;
     background-color: white;
   }
-  .form-container input[type=text], .form-container input[type=number], .form-container input[type=name]  {
+  .form-container input[type=text], .form-container input[type=number], .form-container input[type=name], .form-container input[type=tel] {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
     border: none;
     background: #f1f1f1;
   }
-  .form-container input[type=text]:focus, .form-container input[type=number]:focus, .form-container input[type=name]:focus{
+  .form-container input[type=text]:focus, .form-container input[type=number]:focus, .form-container input[type=name]:focus, .form-container input[type=tel]:focus {
     background-color: #ddd;
     outline: none;
   }

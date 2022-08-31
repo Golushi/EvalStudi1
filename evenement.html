@@ -38,7 +38,7 @@
           <br class="card-text">L'équipe de Phoenyx Land participe activement à remettre en ordre 
             les forêts de la Teste-de-Buch et de Landiras.<br /><br /> Plusieurs missions nécessite 
             de l'aide exterieur.
-            Nous avons besoins d'aide dans notre petite pépinieres pour la plantation d'arbres qui 
+            Nous avons besoins d'aide dans notre petite pépiniere pour la plantation d'arbres qui 
             seront ensuite plantés apres le début de la régéneration de la forêt. <br /><br />
             Notre deuxième équipe se mobilise dans les forêts de Girondes pour identifier et résorber 
             les causes des départs de feu, prévenir et sensibiliser le public, débroussailler 
@@ -47,8 +47,49 @@
             enregistrer sur le formulaire qui suit. Toute l'équipe vous remercie pour vos dons et 
             pour votre aide.
           </p>
-          <a href="#about" class="btn btn-primary">Acceder au formulaire d'inscription</a>
+          <a href="#about" 
+            class="btn btn-primary" 
+            onclick="openFormInscription()">Acceder au formulaire d'inscription</a>
         </div>
+        <!-- START INSCRIPTION FORM-->
+        <div class="form-popup" id="inscriptionForm">
+          <form action="" class="form-container" data-spy="scroll" method="GET">
+            <h2>Inscription aux journées d'aides</h2>
+            <label for="name"><b>Nom</b></label><br />
+            <input name="name" type="text" placeholder="Entrez votre nom" required />
+            <label for="email"><b>Email</b></label>
+            <input name="email" type="text" placeholder="Enter Email" required>
+            <label for="phone"><b>Téléphone</b></label><br />
+            <input name="phone" type="tel" placeholder="0600000000" required>
+            <p><b>Choisissez vos samedis disponibles:</b></p>
+            <div>
+              <input type="checkbox" id="rep1" name="rep1"
+                     checked>
+              <label for="rep1">Samedi 3 septembre</label>
+            </div>
+            <div>
+              <input type="checkbox" id="rep2" name="rep2">
+              <label for="rep2">Samedi 10 septembre</label>
+            </div>
+            <div>
+              <input type="checkbox" id="rep3" name="rep3">
+              <label for="rep3">Samedi 17 septembre</label>
+            </div>
+            <p class="py-2"><b>Sélectionnez votre mission:</b></p>
+            <div>
+              <input type="radio" id="opt1" name="option-radio" value="opt1"
+                     checked>
+              <label for="opt1">La pépiniere</label>
+            </div>
+            <div>
+              <input type="radio" id="opt2" name="option-radio" value="opt2">
+              <label for="opt2">Sur le terrain</label>
+            </div>
+            <button type="submit" class="btn bg-success">S'inscrire</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Fermer</button>
+          </form>
+        </div>
+        <!--END INSCRIPTION FORM-->
       </div>
       <!--END SLOGAN-->
       <!--START DON-->
